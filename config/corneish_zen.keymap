@@ -34,22 +34,22 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        mo_shift: layer_n_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_LAYER";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&mo LNUM>, <&sk LSHIFT>;
-        };
-        td_shift: tap_dance_shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SHIFT";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&sk LSHIFT>, <&caps_word>;
-        };
+        // mo_shift: layer_n_shift {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "SHIFT_LAYER";
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <150>;
+        //     quick-tap-ms = <0>;
+        //     flavor = "tap-preferred";
+        //     bindings = <&mo LNUM>, <&sk LSHIFT>;
+        // };
+        // td_shift: tap_dance_shift {
+        //     compatible = "zmk,behavior-tap-dance";
+        //     label = "TD_SHIFT";
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <200>;
+        //     bindings = <&sk LSHIFT>, <&caps_word>;
+        // };
     };
     keymap {
         compatible = "zmk,keymap";
