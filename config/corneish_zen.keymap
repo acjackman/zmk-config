@@ -60,7 +60,7 @@
             label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&lo_sk LNUM LSHFT>, <&caps_word>;
+            bindings = <&lo_sk LNAV LSHFT>, <&caps_word>;
         };
 
     };
