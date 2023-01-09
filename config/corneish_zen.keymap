@@ -60,14 +60,14 @@
         default_layer {
             label = "QWERTY";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  -  |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '  |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  =  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
             bindings = <
-   &kp TAB     &kp Q        &kp W      &kp E       &kp R      &kp T                  &kp Y          &kp U         &kp I      &kp O      &kp P           &kp EQUAL
+   &kp TAB     &kp Q        &kp W      &kp E       &kp R      &kp T                  &kp Y          &kp U         &kp I      &kp O      &kp P           &kp MINUS
    &mt F19 ESC &hm LSHIFT A &hm LCTL S &hm LALT D  &hm LGUI F &hm LGUI G             &hm LGUI H     &hm LGUI J    &hm LALT K &hm LCTL L &hm LSHIFT SEMI &kp SQT
-   &key_repeat &kp Z        &kp X      &kp C       &kp V      &kp B                  &kp N          &kp M         &kp COMMA  &kp DOT    &kp FSLH        &kp MINUS
+   &key_repeat &kp Z        &kp X      &kp C       &kp V      &kp B                  &kp N          &kp M         &kp COMMA  &kp DOT    &kp FSLH        &kp EQUAL
                 &sk LSHFT   &lt LNAV SPC  &lo_sk LNUM LSHFT
                 &lt LSYM BSPC  &lt LFCT RET  &kp DEL
             >;
