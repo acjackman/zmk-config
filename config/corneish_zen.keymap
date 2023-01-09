@@ -77,9 +77,9 @@
             bindings = <
    &kp TAB     &kp Q        &kp W      &kp E       &kp R      &kp T                  &kp Y          &kp U         &kp I      &kp O      &kp P           &kp MINUS
    &super_esc  &hm LSHIFT A &hm LCTL S &hm LALT D  &hm LGUI F &hm LGUI G             &hm LGUI H     &hm LGUI J    &hm LALT K &hm LCTL L &hm LSHIFT SEMI &kp SQT
-   &key_repeat &kp Z        &kp X      &kp C       &kp V      &kp B                  &kp N          &kp M         &kp COMMA  &kp DOT    &kp FSLH        &kp EQUAL
-                &sk LSHFT   &lt LNAV SPC  &lo_sk LNUM LSHFT
-                &lt LSYM BSPC  &lt LFCT RET  &kp DEL
+   &none       &kp Z        &kp X      &kp C       &kp V      &kp B                  &kp N          &kp M         &kp COMMA  &kp DOT    &kp FSLH        &kp EQUAL
+                &key_repeat  &lo_sk LNAV LSHFT &lt LNUM SPC
+                &lt LSYM RET &lt LFCT BSPC &kp DEL
             >;
         };
 
