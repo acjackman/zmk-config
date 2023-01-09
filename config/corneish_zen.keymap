@@ -38,11 +38,11 @@
         super_esc: super_escape {
             compatible = "zmk,behavior-hold-tap";
             label = "SUPER_ESCAPE";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <100>;
             quick-tap-ms = <0>;
             flavor = "hold-preferred";
-            bindings = <&kp F19>, <&kp ESC>;
+            bindings = <&kp>, <&kp>;
         };
 
         lo_sk: layer_sticky_key {
@@ -75,9 +75,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  =  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
             bindings = <
-   &kp TAB     &kp Q        &kp W      &kp E       &kp R      &kp T                  &kp Y          &kp U         &kp I      &kp O      &kp P           &kp MINUS
-   &super_esc  &hm LSHIFT A &hm LCTL S &hm LALT D  &hm LGUI F &hm LGUI G             &hm LGUI H     &hm LGUI J    &hm LALT K &hm LCTL L &hm LSHIFT SEMI &kp SQT
-   &none       &kp Z        &kp X      &kp C       &kp V      &kp B                  &kp N          &kp M         &kp COMMA  &kp DOT    &kp FSLH        &kp EQUAL
+   &kp TAB             &kp Q        &kp W      &kp E       &kp R      &kp T                  &kp Y          &kp U         &kp I      &kp O      &kp P           &kp MINUS
+   &super_esc F19 ESC  &hm LSHIFT A &hm LCTL S &hm LALT D  &hm LGUI F &hm LGUI G             &hm LGUI H     &hm LGUI J    &hm LALT K &hm LCTL L &hm LSHIFT SEMI &kp SQT
+   &none               &kp Z        &kp X      &kp C       &kp V      &kp B                  &kp N          &kp M         &kp COMMA  &kp DOT    &kp FSLH        &kp EQUAL
                 &key_repeat  &lo_sk LNAV LSHFT &lt LNUM SPC
                 &lt LSYM RET &lt LFCT BSPC &kp DEL
             >;
