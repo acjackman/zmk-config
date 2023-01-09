@@ -74,7 +74,7 @@
 //                   |     | SHIFT | SPC |   | ENT | BSPC | DEL |
             bindings = <
    &kp TAB     &kp Q        &kp W      &kp E       &kp R      &kp T                  &kp Y      &kp U      &kp I      &kp O      &kp P           &kp EQUAL
-   &super_esc  &hm LSHIFT A &hm LCTL S &hm LALT D  &hm LGUI F &HM LGUI G             &hm LGUI H &hm LGUI J &hm LALT K &hm LCTL L &hm LSHIFT SEMI &kp SQT
+   &super_esc  &hm LSHIFT A &hm LCTL S &hm LALT D  &hm LGUI F &hm LGUI G             &hm LGUI H &hm LGUI J &hm LALT K &hm LCTL L &hm LSHIFT SEMI &kp SQT
    &key_repeat &kp Z        &kp X      &kp C       &kp V      &kp B                  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH        &kp MINUS
                                          &sk LSHIFT &mo LNUM  &lt LNAV SPC           &lt LSYM RET  &lt LFCT BSPC &kp DEL
             >;
