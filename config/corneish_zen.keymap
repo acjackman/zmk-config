@@ -84,21 +84,6 @@
             >;
         };
 
-        navigation_layer {
-            label = "NAV";
-// -----------------------------------------------------------------------------------------
-// | ___ |      |     |     |     |     |   |     |      |  UP  |       |      |      |
-// | ___ | SHFT | CTL | ALT | GUI |     |   |     | LEFT | DOWN | RIGHT |      |      |
-// |     |      |     |     |     |     |   |     | BSPC |      |  DEL  |      |      |
-//                    | ___ | ___ | ___ |   | ___ | ____ | ____ |
-            bindings = <
-   &trans &none     &none    &none    &none    &none       &none &none     &kp UP    &none     &none &none
-   &trans &kp LSHFT &kp LCTL &kp LALT &kp LGUI &none       &none &kp LEFT  &kp DOWN  &kp RIGHT &none &none
-   &none  &none     &none    &none    &none    &none       &none &kp BSPC  &none     &kp DEL   &none &none
-                &trans &trans &trans
-                &trans &trans &trans
-            >;
-        };
 
         number_layer {
             label = "NUMBER";
@@ -143,6 +128,22 @@
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp F12 &kp F7 &kp F8 &kp F9 &kp F15 &kp F18
    &trans     &kp LSHFT    &kp LCTL     &kp LALT     &kp LGUI     &none             &kp F11 &kp F4 &kp F5 &kp F6 &kp F14 &kp F17
    &none      &none        &none        &none        &none        &none             &kp F10 &kp F1 &kp F2 &kp F3 &kp F13 &kp F16
+                &trans &trans &trans
+                &trans &trans &trans
+            >;
+        };
+
+        navigation_layer {
+            label = "NAV";
+// -----------------------------------------------------------------------------------------
+// | ___ |      |     |     |     |     |   | HOME | PGDN | PGUP |  END  |      |      |
+// | ___ | SHFT | CTL | ALT | GUI |     |   | LEFT | DOWN |  UP  | RIGHT |      |      |
+// |     |      |     |     |     |     |   |      | BSPC |      |  DEL  |      |      |
+//                    | ___ | ___ | ___ |   | ____ | ____ | ____ |
+            bindings = <
+   &trans &none     &none    &none    &none    &none       &kp HOME  &kp PG_DN &kp PG_UP &kp END   &none &none
+   &trans &kp LSHFT &kp LCTL &kp LALT &kp LGUI &none       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none &none
+   &none  &none     &none    &none    &none    &none       &none     &kp BSPC  &none     &kp DEL   &none &none
                 &trans &trans &trans
                 &trans &trans &trans
             >;
