@@ -10,10 +10,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DFLT 0
-#define LNAV 1
-#define LNUM 2
-#define LSYM 3
-#define LFCT 4
+#define LNUM 1
+#define LSYM 2
+#define LFCT 3
+#define LNAV 4
 
 
 / {
