@@ -70,17 +70,17 @@
         default_layer {
             label = "QWERTY";
 // -----------------------------------------------------------------------------------------
-// |  RPT |  Q  |  W  |  E  |  R   |  T  |   |  Y  |  U  |  I  |  O  |  P  |  -  |
-// | SUPR |  A  |  S  |  D  |  F   |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '  |
-// | TAB  |  Z  |  X  |  C  |  V   |  B  |   |  N  |  M  |  ,  |  .  |  /  |  =  |
-//                    |     | SHFT | SPC |   | ENT | SYM |     |
-//                    |     | SYM  | NUM |   | NAV | SYM |     |
+// |  RPT |  Q  |  W  |  E  |  R   |  T  |   |  Y  |  U   |  I  |  O  |  P  |  -  |
+// | SUPR |  A  |  S  |  D  |  F   |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '  |
+// | TAB  |  Z  |  X  |  C  |  V   |  B  |   |  N  |  M   |  ,  |  .  |  /  |  =  |
+//                    |     | SHFT | SPC |   | ENT | SHFT |     |
+//                    |     | SYM  | NUM |   | NAV | SYM  |     |
             bindings = <
    &key_repeat        &kp Q        &kp W      &kp E       &kp R      &kp T                  &kp Y          &kp U         &kp I      &kp O      &kp P           &kp MINUS
-   &super_esc F19 ESC &hm LSHIFT A &hm LCTL S &hm LALT D  &hm LGUI F &hm LGUI G             &hm LGUI H     &hm LGUI J    &hm LALT K &hm LCTL L &hm LSHIFT SEMI &kp SQT
+   &super_esc F19 ESC &hm LSHIFT A &hm LCTL S &hm LALT D  &hm LGUI F &hm LGUI G             &hm LGUI H     &hm LGUI J    &hm LALT K &hm LCTL L &hm LSHIFT SEMI &lt LSYM SQT
    &lt LFCT TAB       &kp Z        &kp X      &kp C       &kp V      &kp B                  &kp N          &kp M         &kp COMMA  &kp DOT    &kp FSLH        &kp EQUAL
                 &none        &shift_td &lt LNUM SPC
-                &lt LNAV RET &mo LSYM   &none
+                &lt LNAV RET &shift_td &none
             >;
         };
 
