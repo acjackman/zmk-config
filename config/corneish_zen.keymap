@@ -136,14 +136,14 @@
         navigation_layer {
             label = "NAV";
 // -----------------------------------------------------------------------------------------
-// | ___ |      |     |     |     |     |   | HOME | PGDN | PGUP |  END  |      |      |
-// | ___ | SHFT | CTL | ALT | GUI |     |   | LEFT | DOWN |  UP  | RIGHT |      |      |
-// |     |      |     |     |     |     |   |      | BSPC |      |  DEL  |      |      |
-//                    | ___ | ___ | ___ |   | ____ | ____ | ____ |
+// | ___ |      | PREV | PLAY | NEXT |     |   | HOME | PGDN | PGUP |  END  |      |      |
+// | ___ | SHFT | CTL  | ALT  | GUI  |     |   | LEFT | DOWN |  UP  | RIGHT |      |      |
+// |     |      |      |      |      |     |   |      | BSPC |      |  DEL  |      |      |
+//                     | ____ | ____ | ___ |   | ____ | ____ | ____ |
             bindings = <
-   &trans &none     &none    &none    &none    &none       &kp HOME  &kp PG_DN &kp PG_UP &kp END   &none &none
-   &trans &kp LSHFT &kp LCTL &kp LALT &kp LGUI &none       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none &none
-   &none  &none     &none    &none    &none    &none       &none     &kp BSPC  &none     &kp DEL   &none &none
+   &trans &none     &kp C_PREV &kp C_PP &kp C_NEXT &none       &kp HOME  &kp PG_DN &kp PG_UP &kp END   &none &none
+   &trans &kp LSHFT &kp LCTL   &kp LALT &kp LGUI   &none       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none &none
+   &none  &none     &none      &none    &none      &none       &none     &kp BSPC  &none     &kp DEL   &none &none
                 &trans &trans &trans
                 &trans &trans &trans
             >;
