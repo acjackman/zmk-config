@@ -79,7 +79,7 @@
    &super_esc F19 ESC &hm LSHIFT A &hm LCTL S &hm LALT D  &hm LGUI F &hm LGUI G             &hm LGUI H     &hm LGUI J    &hm LALT K &hm LCTL L &hm LSHIFT SEMI &lt LSYM SQT
    &lt LFCT TAB       &kp Z        &kp X      &kp C       &kp V      &kp B                  &kp N          &kp M         &kp COMMA  &kp DOT    &kp FSLH        &kp EQUAL
                 &none        &lt LSYM TAB &lt LNUM SPC
-                &lt LNAV RET &shift_td &none
+                &lt LNAV RET &shift_td &kp RGUI
             >;
         };
 
